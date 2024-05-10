@@ -1,0 +1,59 @@
+.dropdown {
+  box-sizing: border-box;
+  position: absolute;
+  top: 5%;
+  width: 98px;
+  height: auto;
+  left: 70%;
+}
+
+#drop_down {
+  width: 110px;
+  height: auto;
+  color: black;
+  background: #D4D4DB;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  padding: 1px 5px;
+  display: none;
+}
+
+#drop_down div {
+  width: 100%;
+  height: auto;
+  padding: 10px 1px;
+  color: black;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+a:active {
+  background: rebeccapurple;
+}
+
+.menu {
+  position: absolute;
+  left: 55%;
+}
+
+#drop_down:target {
+  animation-name: anim;
+  animation-duration: 0.3s;
+  display: block;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0%;
+
+  }
+
+  to {
+    opacity: 100%;
+  }
+}

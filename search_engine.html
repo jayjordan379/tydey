@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="search_engine.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Select search engine</title>
+</head>
+
+<body>
+<header>
+  <big style="color: white;">
+    Select search engine
+  </big>
+  
+  <img src="/back.png" alt="back" width=
+"80" height="80">
+</header>
+
+<hr>
+<!-- bing-->
+ <label for="bing" style="color: white;">  
+
+
+    <div class="bing">Bing
+<input type="radio" id="bing" name="engine" value="bing">
+
+        </div>
+
+
+</label>
+
+
+<!-- google -->
+ <label for="google" style="color: white;">  
+
+
+<div class="google" >Google
+<input type="radio" id="google" name="engine" value="google">
+        </div>
+</label>
+
+<!-- yahoo -->
+ <label for="yahoo" style="color: white;">
+
+
+   <div class="yahoo" >Yahoo
+     <input type="radio" id="yahoo" name="engine" value="yahoo">
+
+   </div>
+
+
+ </label>
+ 
+ <!-- duck duck go -->
+ <label for="duck" style="color: white;">
+ 
+ 
+    <div class="duck" name="engine">Duck duck go
+      <input type="radio" id="duck" name="engine" value="duckduckgo">
+ 
+    </div>
+ 
+ 
+  </label>
+  <center>
+  
+<button class="btn" onclick="getValue()">Set</button>
+</center>
+  <script>
+      var radios = document.getElementsByName('engine');
+
+  function getValue(){
+    var number = radios.length;
+    
+    for (var i = 0; i < number; i++) {
+      // Tab to edit
+      if (radios[i].checked){
+localStorage.setItem('value', radios[i].value);
+alert(radios[i].value+'.com is chosen');
+location.href = 'index.html'
+      }
+    }
+  }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+  .dropdown {
+      box-sizing: border-box;
+      position: absolute;
+      top: 5%;
+      width: 98px;
+      height: auto;
+      left: 70%;
+    }
+    
+    #drop_down {
+      width: 110px;
+      height: auto;
+      color: black;
+      background: #D4D4DB;
+      border: none;
+      border-radius: 4px;
+      position: absolute;
+      padding: 1px 5px;
+      display: none;
+    }
+    
+    #drop_down div {
+      width: 100%;
+      height: auto;
+      padding: 10px 1px;
+      color: black;
+      font-size: 14px;
+    }
+    
+    a {
+      text-decoration: none;
+    
+    }
+    
+    a:active {
+      background: rebeccapurple;
+    }
+    
+    .menu {
+      position: absolute;
+      left: 75%;
+    }
+    
+    #drop_down:target {
+      animation-name: anim;
+      animation-duration: 0.3s;
+      display: block;
+    }
+    
+    @keyframes anim {
+      from {
+        opacity: 0%;
+    
+      }
+    
+      to {
+        opacity: 100%;
+      }
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tyde</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="next.css" id="next.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <script src="https://kit.fontawesome.com/2e4d9bfc4e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- Project -->
+
+
+  <form>
+
+    <div class="backgroundWall">
+
+      <div class="cover">
+        <input type="text" id="input_bar" placeholder="search here...">
+
+        <button type="reset" id="set"></button>
+      </div>
+    </div>
+  </form>
+
+ <a href="#progressBar">
+  <button class="btn" onclick="send()"></button>
+</a>  
+
+  <!-- iframe -->
+
+  <iframe src="" frameborder="0"></iframe>
+
+  
+
+  <!-- header -->
+  <section class="dropdown">
+    
+    <a href="#drop_down">
+      <button class="menu">
+<i class="fa-solid fa-bars"></i>      </button>
+    </a>
+<div id="drop_down">
+  <a href="#progressBar">
+    <div class="one" onclick="timee1()">
+      Home
+    </div>
+  </a>
+
+
+  <a href="#progressBar">
+    <div class="three" onclick="timee2()">
+     Search engine
+    </div>
+  </a>
+  <a href="#progressBar">
+    <div class="four" onclick="timee3()">
+     About us
+    </div>
+  </a>
+  <a href="">
+    <div class="back" onclick ="window.history.back();">
+      Back
+    </div>
+  </a>
+</div>
+  </section>
+
+<div id="progressBar">
+  <div class="bar"></div>
+</div>
+  <!-- <script src="main.js"></script> -->
+  <script src="/main.js"></script>
+  <script>
+    var input = document.querySelector('input');
+    input.value = localStorage.getItem('input_value');
+    const frame = document.querySelector('iframe');
+
+    frame.src = 'http://www.' + localStorage.getItem('value') + '.com/search?q=' + input.value;
+
+   // function go() {
+    //frame.src = 'http://www.' + localStorage.getItem('value') + '.com/search?q=' + input.value;
+   // }
+  </script>
+
+</html>

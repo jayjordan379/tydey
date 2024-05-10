@@ -1,0 +1,171 @@
+*{box-sizing: border-box}
+body{
+  margin: 0px;
+  padding: 0px;
+  background: black;
+}
+#input_bar{
+    position: fixed;
+  top: 16px;
+    left: 3px;
+width: 70%;
+  height: 40px;
+  padding: 10px 45px 10px 10px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+}
+#set{
+  top: 17px;
+    position: fixed;
+left: 60%;
+  opacity: 70%;
+  width: 30px;
+  height: 35px;
+  background: url("InShot_20240410_191934477.png");
+  background-size: cover;
+  border-left: 0.4px solid silver;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+.btn{
+  top: 16px;
+    position: fixed;
+    left: 73%;
+background-color: white;
+  background-image: url("/logo5_10_0106 (1).png");
+    background-size: 65px, 70px;
+    background-position: center;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+}
+#menu{
+  display: block;
+  top: 10px;
+}
+.cover{
+  position: fixed;
+  background: red;
+  box-shadow: 4px 0px 5px black;
+}
+iframe{
+  top: 63px;
+}
+.header{
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  font-size: 4vw;
+  text-align: left;
+  background: #323345;
+  color: white;
+}
+
+.footer{
+  color: white;
+  position: relative;
+  top: 300px;
+  font-size: 4vw;
+}
+#img{
+  position: relative;
+}
+#logo{
+  position: relative;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.page{
+      background: #1A1B2B;
+  width: 100%;
+  height: 100vh;
+}
+
+.one,.two,.three,.four{
+  color: white;
+  font-size:4vw;
+  padding: 10px 10px;
+  border-bottom: 0.5px solid grey;
+}
+
+.backgroundWall {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+    background: url("showcase.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+::-webkit-input-placeholder {
+  position: absolute;
+  left: 5%;
+}
+
+iframe{
+    width:100%;
+    position: absolute;
+    top: 63px;
+    height: 90%;
+    display: block;
+    overflow: scroll;
+    background-size: cover;
+    border-radius: 7px;
+    background: white;
+  /*  border-top: 4px groove #3E16CE; */
+    border-left: 2px groove #3E16CE;
+}
+#Pbar{
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  
+}
+#Pbar::-webkit-progress-bar{
+  background: red;
+}
+#progressBar {
+  width: 100%;
+  height: 2px;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  background: grey;
+  display: none;
+}
+
+.bar {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  background: orangered;
+  animation-name: move;
+  animation-duration: 7s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+#progressBar:target{
+  display: block;
+}

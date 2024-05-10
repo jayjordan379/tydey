@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+body{
+  margin: 0px;
+        background: url("showcase.jpg");
+      background-position: center;
+
+}
+    .body {
+      font-size: 4vw;
+      color: white;
+    }
+
+    h4 {
+      color: whitesmoke;
+      font-size: 5vw;
+      text-decoration: underline;
+    }
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  background: linear-gradient(to top left, #BB2A2A, #E48813);
+  text-align: center;
+  color: white;
+  position: relative;
+  bottom: -1px;
+}
+    img {
+      width: 20%;
+      height: 20vw;
+      border: none;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+    }
+
+.word {
+  font-size: 10vw;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  position: relative;
+  top: 10%;
+  color: darkorange;
+  /*text-shadow: 2px 2px 4px #E48813, -1px -2px 3px #EAE9EC;*/
+  float: left;
+  font-weight: bold;
+  left: 20%;
+}
+
+    .head {
+      width: 100%;
+      padding: 20px;
+      background: transparent;
+      position: absolute;
+      height: 85px;
+      top: 0px;
+    }
+
+    p {
+      position: relative;
+    }
+    hr{
+      margin-top: 20%;
+    }
+    #progressBar {
+  width: 100%;
+  height: 2px;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  background: grey;
+  display: none;
+}
+
+.bar {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  background: orangered;
+  animation-name: move;
+  animation-duration: 7s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+#progressBar:target{
+  display: block;
+}
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <script src="https://kit.fontawesome.com/2e4d9bfc4e.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="dropdown.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About us</title>
+</head>
+
+<body>
+  <div class="body">
+  <div class="head">
+    <span>
+      <img src="/logo5_9_232933 (1).png" alt="logo.png" id="word">
+
+
+      <span class="word">
+        Tyde
+      </span>
+    </span>
+  <section class="dropdown">
+    
+    <a href="#drop_down">
+      <button class="menu">
+<i class="fa-solid fa-bars"></i>      </button>
+    </a>
+<div id="drop_down">
+  <a href="#progressBar">
+    <div class="one" onclick="timee1()">
+      Home
+    </div>
+  </a>
+
+
+  <a href="#progressBar">
+    <div class="three" onclick="timee2()">
+     Search engine
+    </div>
+  </a>
+  <a href="#progressBar">
+    <div class="four" onclick="timee3()">
+     About us
+    </div>
+  </a>
+  <a href="">
+    <div class="back" onclick ="window.history.back();">
+      Back
+    </div>
+  </a>
+</div>
+  </section>
+
+
+    <hr>
+    <h3>
+      About us
+    </h3>
+    <h4>
+      Project info
+    </h4>
+    <p>
+      This software was designed browsing purposes and search use only.
+    </p>
+    <p>
+      This project is still a prototype being tested and improved to it's maximum capacity.
+    </p>
+    <p>
+      This web is not for advertising purposes or any other activity except it's general purposes designed for it.
+    </p>
+    <p>
+      For further info about the software, please visit our <a href="help.html">Help</a> page.
+    </p>
+    <h4>
+      Developer's information
+    </h4>
+    <p>
+      As a developer, I always look for ways of making software more interactive and responsive to the user according to the user's choice of the product
+    </p>
+    <p>
+      As stated earlier, this browser is still under devlopment as this being the second version of the browser under the name: <big>TYDE</big>.
+    </p>
+    <p>
+      For more information and suggestions of making the browser more cooler and more powerful, please contact me at <i>+256 752829856</i>.
+    </p>
+    <p>
+      From the <strong>CODE FIRE</strong> organisation, would like to thank you for your support and choosing our product.
+    </p>
+    <p>
+      or mail me at 
+    </p>
+    <a href=mailto:jayjordan379@gmail.com>
+      jayjordan379@gmail.com
+    </a>
+    <big>
+      <center>
+        THANK YOU...
+      </center>
+    </big>
+    <footer>
+      <div class="footer">
+        <i>
+          code fire.co.ug|2024.
+        </i>
+      </div>
+    </footer>
+    
+    
+    
+    <div id="progressBar">
+  <div class="bar"></div>
+</div>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
